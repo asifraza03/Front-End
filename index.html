@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+    <link rel="stylesheet" href="./style.css">
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="parent">
+        <!-- <a href=""><img src="./img/background.jpg" alt="yxz"></a> -->
+        <navbar class="nav">
+            <a href="./index.html"><img src="./img/logo.png" alt="yzx"></a>
+            <div class="nav-link" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                   
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#shop">SHOP</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#aboutus">ABOUT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+
+        </navbar>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Making website is now one of the easiest thing in the world,You Just need to learn HTML,CSS,<br>Javascript and your are good to go.</p>
+            <a href="" class="hero-btn">Visit Us to know more.</a>
+        </div>
+
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+</body>
+
+</html>
